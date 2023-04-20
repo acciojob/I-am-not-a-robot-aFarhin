@@ -13,15 +13,6 @@ const para = document.getElementById("para");
 // Get the heading element
 const heading = document.getElementById("h");
 
-const resetBtn = document.getElementById("reset");
-const resetBtnStyle = getComputedStyle(resetBtn);
-const isResetBtnVisible = resetBtnStyle.display !== "none";
-
-if (isResetBtnVisible) {
-  console.log("Reset button is visible");
-} else {
-  console.log("Reset button is not visible");
-}
 
 
 // Array to store the selected image elements
