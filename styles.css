@@ -1,4 +1,4 @@
-.img1 {
+/* /* .img1 {
   content: url("https://picsum.photos/id/237/200/300");
 }
 
@@ -37,4 +37,58 @@ p {
 
 button {
   margin: 20px;
+}
+
+
+  */
+
+
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.images-container img {
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #555;
+}
+
+.images-container img.selected {
+  transform: scale(1.1);
+  border: 5px solid rgb(0, 195, 255);
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  margin: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(0, 195, 255);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(0, 170, 221);
+}
+
+#para {
+  font-size: 24px;
+  font-weight: bold;
 }
